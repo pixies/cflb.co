@@ -1,0 +1,82 @@
+{% load staticfiles %}
+<html>
+    <head>
+    	<meta charset="UTF-8"> 
+        <title>www.cflb.co :: blog</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+       <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static "css/blog.css" %}">
+    </head>
+    <body>
+	    
+
+
+	    
+
+
+<div class="navbar-fixed">
+ <nav>
+    <div class="nav-wrapper orange darken-2">
+      <a href="/" class="brand-logo titulo"> cflb.co</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+      </ul>
+    </div>
+  </nav>
+	</div>
+
+	        <div class="row">
+	            <div class="col l8">
+	            {% block content %}
+	            {% endblock %}
+	            </div>
+
+	            <div class="col l4">
+	            
+
+sdfasdfads
+	            </div>
+	        </div>
+
+
+
+        <footer class="page-footer  orange darken-2">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text titulo">www.cflb.co</h5>
+                <p class="grey-text text-lighten-4">Vai passando, vai passando.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text titulo">Mapa site</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Início</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Estudos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Empreendedorismo</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Fale com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright cflb.co
+            <a class="grey-text text-lighten-4 right" href="#!">www.cflb.co</a>
+            </div>
+          </div>
+        </footer>
+            
+
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+	</body>
+</html>
